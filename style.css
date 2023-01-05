@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(to bottom right , rgba(236, 15, 15, 0.955) , rgb(243, 34, 187)) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+height: 60%;
+width: 700px;
+display: flex;
+position: relative;
+justify-content: space-around;
+align-items: center;
+border-radius: 10px;
+overflow: hidden;
+
+}
+
+
+.btn{
+    position: absolute;
+    padding: 0.52em 1.2em;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.77);
+    border-radius: 25px ;
+    z-index: 6;
+    border: 0px solid blue;
+    /* font-weight: bold; */
+}
+.new{
+    
+    top:10%;
+}
+.roll{
+    
+    bottom:30%;
+    
+}
+.hold{
+    
+    bottom:20%;
+}
+.dice{
+    border-radius: 20%;
+    top:35%;
+    padding: 0.0em 0.5em;
+    background: rgba(255, 255, 255, 0.0);
+ 
+   
+
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(8, 3, 3, 0.6);
+    backdrop-filter: blur(0.5px);
+    z-index: 5;
+}
+.hidden{
+    display: none;
+}
+
+.right,.left{
+    background: rgba(244, 209, 209, 0.701);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.player{
+    position: absolute;
+    top: 20%;
+    font-size: 2rem;
+}
+.score{
+    position: absolute;
+    top: 30%;
+    font-size: 4rem;
+    color:  rgba(236, 15, 15, 0.955);
+    
+    
+    
+   
+}
+
+
+.current_container{
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 22%;
+    padding: 1.2rem 2.5rem;
+    background-color: rgba(255, 42, 42, 0.905);
+    color: white;
+    border-radius: 10px;
+}
+
+.current-score{
+    font-size: 1.56rem;
+}
+@media screen and (max-width : 430px) {
+    html{
+        /* font-size: 80%; */
+       
+    }
+    .container{
+        width: 100%;
+    }
+  
+    .roll{
+        
+        bottom:10%;
+    }
+    .hold{
+        
+        bottom:2%;
+    }
+}
+
